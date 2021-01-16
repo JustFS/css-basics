@@ -1,0 +1,32 @@
+/* File rouge : selecteur, dimensions */
+/* texte */
+/* couleurs */
+/* boxes */
+/* background */
+/* positioning */
+/* Débug */
+/* pseudo classe/pseudo selecteur */
+/* Flex */
+/* Grid */
+/* Responsive */
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap");
+
+@font-face {
+  font-family: "font-1";
+  src: url(./assets/PlayfairDisplay-Medium.ttf);
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  background: #ecf6ff;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 2.5rem;
+  color: rgb(70, 49, 4);
+  text-shadow: 5px 5px 0px #c1771634;
+  font-family: "font-1", serif;
+}
