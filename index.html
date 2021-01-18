@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-
+  <title>Cours CSS</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -18,21 +17,20 @@
     <div class="positioning">
       <h2>Positioning</h2>
       <span>relative</span>
-      <div id="circle">absolute</div>
-      <div id="rectangle">absolute</div>
+      <span id="circle">absolute</span>
+      <span id="rectangle">absolute</span>
     </div>
 
     <div class="flexbox">
       <h2>Flexbox</h2>
-
-      <ul class="flexbox-container">
-        <li class="boxes">
+      <ul>
+        <li>
           <a href="https://flexbox.help/">https://flexbox.help/</a>
         </li>
-        <li class="boxes">
+        <li>
           <a href="https://www.reveillere.fr/M2WEB/sheets/css.pdf">www.reveillere.fr/</a>
         </li>
-        <li class="boxes">
+        <li>
           <a href="https://cssgenerator.org/">https://cssgenerator.org/</a>
         </li>
       </ul>
@@ -41,17 +39,18 @@
     <div class="grid">
       <h2>Grid</h2>
       <div class="grid-container">
-        <!-- <div class="img"> -->
-        <img src="./assets/logo.png" height="200" alt="logo">
-        <!-- </div> -->
+        <div class="img">
+          <img src="./assets/logo.png" height="200" alt="logo">
+        </div>
         <form>
-          <input type="text" placeholder="Prénom" id="firstname">
-          <input type="text" placeholder="Nom" id="surname">
-          <textarea id="" cols="30" rows="30" placeholder="Ici votre message"></textarea>
+          <input type="text" id="firstname" placeholder="Prénom">
+          <input type="text" id="surname" placeholder="Nom">
+          <textarea cols="30" rows="30" placeholder="Ici votre message"></textarea>
           <input type="submit" value="Valider">
         </form>
       </div>
     </div>
+
   </main>
 
 </body>
