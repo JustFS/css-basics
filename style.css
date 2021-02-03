@@ -1,0 +1,279 @@
+/* Fil rouge : selecteur, dimensions, couleurs */
+/* Texte */
+/* Background */
+/* Boxes */
+/* Positioning */
+/* Flex */
+/* Grid */
+/* Pseudo classe */
+/* Responsive */
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+
+@font-face {
+  font-family: "font-1";
+  src: url(./assets/fonts/DMSerifDisplay-Regular.ttf);
+}
+
+* {
+  /* margin: 0;
+  padding: 0;
+  box-sizing: border-box; */
+  /* border: 1px solid yellow; // pour débug */
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  font-family: "font-1", Verdana;
+  background: url(./assets/img/bg.jpg) no-repeat fixed top/cover;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  font-size: 2.5rem;
+  /* les ombres : axe-X axe-Y flou couleur */
+  text-shadow: 5px 4px 0px #4a9bff3b;
+  color: rgb(255 111 225);
+}
+
+main {
+  min-height: 500px;
+  width: 90%;
+  background: rgba(245, 243, 243, 0.9);
+  /* centrer une boite */
+  margin: 0 auto;
+  border: 2px solid rgb(33, 101, 209);
+  border-radius: 20px 20px 0 0;
+  box-shadow: 2px 0px 18px 3px #3efdeb;
+  padding: 15px;
+}
+
+.positioning,
+.flexbox,
+.flexbox-exo,
+.grid {
+  border: 2px solid skyblue;
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+  min-height: 100px;
+  margin-top: 20px;
+}
+
+h2 {
+  margin: 0;
+}
+
+.absolute {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#circle {
+  height: 60px;
+  width: 60px;
+  background: skyblue;
+  padding: 20px;
+  border-radius: 50%;
+  position: absolute;
+  /* centrer verticalement en absolute */
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  transition: 0.5s;
+}
+
+#circle:hover {
+  width: 160px;
+}
+
+#rectangle {
+  height: 15px;
+  width: 100px;
+  background: slateblue;
+  padding: 20px;
+  position: absolute;
+  left: 180px;
+  top: 0;
+  transition: 2s;
+}
+#rectangle:hover {
+  transform: scale(2);
+}
+
+#square {
+  height: 50px;
+  width: 50px;
+  clip-path: polygon(
+    50% 0%,
+    32% 34%,
+    98% 35%,
+    44% 55%,
+    94% 94%,
+    50% 100%,
+    21% 91%,
+    2% 68%,
+    2% 35%,
+    21% 15%
+  );
+  background: teal;
+  position: absolute;
+  padding: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 1s;
+}
+#square:hover {
+  transform: scale(3) translate(-50%, -50%);
+}
+
+.flexbox ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flexbox li {
+  font-size: 0.7rem;
+  height: 160px;
+  width: 160px;
+  margin: 10px;
+  background: turquoise;
+  /* centrer verticalement */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexbox-exo ul {
+  display: flex;
+  justify-content: space-between;
+}
+.flexbox-exo li {
+  height: 100px;
+  width: 100px;
+  border-radius: 150px;
+  background: url(./assets/img/456536.jpg) center/cover;
+}
+/* ************************ GRID ************************ */
+.grid-container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  padding: 10px;
+}
+
+img {
+  margin: 0 auto;
+  display: block;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "i1 i2"
+    "ta ta"
+    "bt bt";
+}
+
+input,
+textarea {
+  margin: 5px;
+  height: 45px;
+  border: 1px solid darkblue;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-family: "font-1";
+}
+
+#firstname {
+  grid-area: i1;
+}
+
+#surname {
+  grid-area: i2;
+}
+
+textarea {
+  resize: none;
+  grid-area: ta;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  background: cyan;
+  transition: 0.2s;
+  grid-area: bt;
+}
+
+input[type="submit"]:hover {
+  background: darkblue;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* ****************** RESPONSIVE ***************** */
+@media screen and (max-width: 877px) {
+  .grid-container {
+    display: block;
+  }
+}
+@media screen and (max-width: 635px) {
+  form {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "i1"
+      "i2"
+      "ta"
+      "bt";
+  }
+}
+
+@media screen and (max-width: 592px) {
+  .flexbox-exo li {
+    width: 20%;
+  }
+  #square {
+    display: none;
+  }
+  #rectangle {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 486px) {
+  .flexbox ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* .flexbox ul {
+    display: block;
+    margin: 0 auto;
+  }
+  .flexbox li {
+    margin: 5px auto;
+  } */
+}
+
+@media screen and (max-width: 362px) {
+  input,
+  textarea {
+    font-size: 0.8rem;
+    padding: 5px;
+  }
+}

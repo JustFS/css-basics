@@ -1,115 +1,64 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <title>Story by HTML5 UP</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <noscript>
-    <link rel="stylesheet" href="assets/css/noscript.css" />
-  </noscript>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="./style.css">
 </head>
 
-<body class="is-preload">
+<body>
+  <header>
+    <h1>Les bases de CSS</h1>
+  </header>
+  <main>
+    <div class="positioning">
+      <h2>Positioning</h2>
+      <span>relative</span>
+      <span id="circle" class="absolute">absolute</span>
+      <span id="rectangle" class="absolute">absolute</span>
+      <span id="square" class="absolute">absolute</span>
+    </div>
+    <div class="flexbox">
+      <h2>Flexbox</h2>
+      <ul>
+        <li>
+          <a href="https://flexbox.help/" target="_blank">https://flexbox.help/</a>
+        </li>
+        <li>
+          <a href="https://www.reveillere.fr/M2WEB/sheets/css.pdf" target="_blank">www.reveillere.fr</a>
+        </li>
+        <li>
+          <a href="https://cssgenerator.org/" target="_blank">https://cssgenerator.org/</a>
+        </li>
+      </ul>
+    </div>
+    <div class="flexbox-exo">
+      <h2>Flexbox Exo</h2>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <div class="grid">
+      <h2>Grid</h2>
+      <div class="grid-container">
+        <img src="./assets/img/logo-css.png" height="200" alt="logo-css">
 
-  <div id="wrapper" class="divided">
-    <section
-      class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
-      <div class="content">
-        <h1>Story</h1>
-        <p class="major">A (modular, highly tweakable) responsive one-page template designed by <a
-            href="https://html5up.net">HTML5 UP</a> and released for free under the <a
-            href="https://html5up.net/license">Creative Commons</a>.</p>
-        <ul class="actions stacked">
-          <li><a href="#first" class="button big wide smooth-scroll-middle">Get Started</a></li>
-        </ul>
-      </div>
-      <div class="image">
-        <img src="images/banner.jpg" alt="" />
-      </div>
-    </section>
-
-    <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
-      id="first">
-      <div class="content">
-        <h2>Magna etiam feugiat</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel
-          massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium
-          massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
-        <ul class="actions stacked">
-          <li><a href="#" class="button">Learn More</a></li>
-        </ul>
-      </div>
-      <div class="image">
-        <img src="images/banner-1.jpg" alt="banner-1" />
-      </div>
-    </section>
-
-    <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-      <div class="content">
-        <h2>Tempus adipiscing</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel
-          massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium
-          massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
-        <ul class="actions stacked">
-          <li><a href="#" class="button">Learn More</a></li>
-        </ul>
-      </div>
-      <div class="image">
-        <img src="images/banner-2.jpg" alt="" />
-      </div>
-    </section>
-
-    <section class="wrapper style1 align-center">
-      <div class="inner medium">
-        <h2>Get in touch</h2>
-        <form method="post" action="#">
-          <div class="fields">
-            <div class="field half">
-              <label for="name">Name</label>
-              <input type="text" name="name" id="name" value="" />
-            </div>
-            <div class="field half">
-              <label for="email">Email</label>
-              <input type="email" name="email" id="email" value="" />
-            </div>
-            <div class="field">
-              <label for="message">Message</label>
-              <textarea name="message" id="message" rows="6"></textarea>
-            </div>
-          </div>
-          <ul class="actions special">
-            <li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
-          </ul>
+        <form action="">
+          <input type="text" id="firstname" placeholder="Prénom">
+          <input type="text" id="surname" placeholder="Nom">
+          <textarea cols="30" rows="10" placeholder="Ici votre message"></textarea>
+          <input type="submit" value="Valider">
         </form>
-
       </div>
-    </section>
-
-    <footer class="wrapper style1 align-center">
-      <div class="inner">
-        <ul class="icons">
-          <li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
-          <li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
-          <li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
-          <li><a href="#" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-          <li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
-        </ul>
-      </div>
-    </footer>
-
-  </div>
-
-  <!-- Scripts -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery.scrollex.min.js"></script>
-  <script src="assets/js/jquery.scrolly.min.js"></script>
-  <script src="assets/js/browser.min.js"></script>
-  <script src="assets/js/breakpoints.min.js"></script>
-  <script src="assets/js/util.js"></script>
-  <script src="assets/js/main.js"></script>
-
+    </div>
+  </main>
+  <footer></footer>
 </body>
 
 </html>
