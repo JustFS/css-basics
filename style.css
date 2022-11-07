@@ -42,9 +42,9 @@ h1 {
   letter-spacing: 3px;
   text-align: center;
   font-size: 2.5rem;
-  /* les ombres : axe-X axe-Y flou couleur */
   text-shadow: 5px 4px 0px #4a9bff3b;
   color: rgb(255 111 225);
+  /* Montrer underline sur google */
 }
 
 main {
@@ -61,7 +61,6 @@ main {
 
 .positioning,
 .flexbox,
-.flexbox-exo,
 .grid {
   border: 2px solid skyblue;
   border-radius: 10px;
