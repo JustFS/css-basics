@@ -1,64 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-  <link rel="stylesheet" href="./style.css">
-</head>
-
-<body>
-  <header>
-    <h1>Les bases de CSS</h1>
-  </header>
-  <main>
-    <div class="positioning">
-      <h2>Positioning</h2>
-      <span>relative</span>
-      <span id="circle" class="absolute">absolute</span>
-      <span id="rectangle" class="absolute">absolute</span>
-      <span id="square" class="absolute">absolute</span>
-    </div>
-    <div class="flexbox">
-      <h2>Flexbox</h2>
-      <ul>
-        <li>
-          <a href="https://flexbox.help/" target="_blank">https://flexbox.help/</a>
-        </li>
-        <li>
-          <a href="https://www.reveillere.fr/M2WEB/sheets/css.pdf" target="_blank">www.reveillere.fr</a>
-        </li>
-        <li>
-          <a href="https://cssgenerator.org/" target="_blank">https://cssgenerator.org/</a>
-        </li>
-      </ul>
-    </div>
-    <div class="flexbox-exo">
-      <h2>Flexbox Exo</h2>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-    </div>
-    <div class="grid">
-      <h2>Grid</h2>
-      <div class="grid-container">
-        <img src="./assets/img/logo-css.png" height="200" alt="logo-css">
-
-        <form action="">
-          <input type="text" id="firstname" placeholder="Prénom">
-          <input type="text" id="surname" placeholder="Nom">
-          <textarea cols="30" rows="10" placeholder="Ici votre message"></textarea>
-          <input type="submit" value="Valider">
-        </form>
+  <body>
+    <header>
+      <h1>Les bases de CSS</h1>
+    </header>
+    <main>
+      <div class="flexbox">
+        <h2>Flexbox</h2>
+        <ul>
+          <li>boite 1</li>
+          <li>boite 2</li>
+          <li>boite 3</li>
+        </ul>
       </div>
-    </div>
-  </main>
-  <footer></footer>
-</body>
+      <div class="grid">
+        <h2>Grid</h2>
+        <div class="grid-container">
+          <img src="./assets/img/logo-css.png" height="200" alt="logo-css" />
 
+          <form action="">
+            <input type="text" id="firstname" placeholder="Prénom" />
+            <input type="text" id="surname" placeholder="Nom" />
+            <textarea
+              cols="30"
+              rows="10"
+              placeholder="Ici votre message"
+            ></textarea>
+            <input type="submit" value="Valider" />
+          </form>
+        </div>
+      </div>
+      <div class="absolute">
+        <h2>Absolute</h2>
+        <span id="circle1"></span>
+        <span id="circle2"></span>
+      </div>
+    </main>
+  </body>
 </html>
